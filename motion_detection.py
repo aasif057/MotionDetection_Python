@@ -49,7 +49,7 @@ while True:
 
     key = cv2.waitKey(1)
     
-    if key==ord('q'):   # pressing 'c' button will end the process of capturing frames
+    if key==ord('q'):   # pressing 'q' button will end the process of capturing frames
         if status==1:
             time_lst_end.append(datetime.now())
         break

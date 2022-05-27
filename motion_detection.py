@@ -63,7 +63,8 @@ for i in range(0,len(time_lst_start)):
     df = df.append({"Start_Time":time_lst_start[i], "End_Time":time_lst_end[i]}, ignore_index=True)
 
 #exporting dataframe to csv file  
-df.to_csv("Time_data.csv")
+a = time.strftime("%Y%m%d-%H%M%S")    #creating a var to store current time as string for filename
+df.to_csv("{}.csv".format(a))
 
 video.release()
 cv2.destroyAllWindows()
